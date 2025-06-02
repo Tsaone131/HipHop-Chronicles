@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HipHop Chronicles | Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      width: 120px;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #f0c420;
+      text-align: center;
+    }
+    .motto {
+      font-style: italic;
+      color: #ccc;
+      margin-top: 0.2rem;
+      font-size: 1rem;
+      text-align: center;
+      flex-basis: 100%;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: 100%;
+    }
+    nav a {
+      color: #f0c420;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus,
+    nav a[aria-current="page"] {
+      background-color: #f0c420;
+      color: #121212;
+      outline: none;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    main h2 {
+      color: #f0c420;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    main p {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    main img.featured {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 0 auto 2rem auto;
+      box-shadow: 0 0 10px #f0c420;
+    }
+    .trending {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 8px #f0c420;
+      margin-bottom: 2rem;
+    }
+    .trending h3 {
+      color: #f0c420;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .trending ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .trending li {
+      background-color: #2a2a2a;
+      padding: 1rem;
+      border-radius: 10px;
+      color: #ddd;
+    }
+    .description {
+      color: #ccc;
+      margin-top: 0.75rem;
+      font-size: 1.05rem;
+      text-align: center;
+    }
+    .spotify-link {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .spotify-link img {
+      max-width: 150px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px #f0c420;
+      transition: transform 0.2s;
+    }
+    .spotify-link img:hover {
+      transform: scale(1.05);
+    }
+    .album-image {
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .album-image img {
+      width: 40%;
+      border-radius: 6px;
+      box-shadow: 0 0 6px #f0c420;
+    }
+    .album-image p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+    .about {
+      background-color: #1f1f1f;
+      padding: 2rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #f0c420;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .about h2 {
+      color: #f0c420;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #1f1f1f;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+    /* Link styles inside trending section */
+    .trending a {
+      color: #f0c420;
+      font-weight: 600;
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 0.75rem;
+    }
+    .trending a:hover,
+    .trending a:focus {
+      color: #fff;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="HipHop Chronicles Logo" class="logo" />
+    <h1>HipHop Chronicles</h1>
+    <p class="motto">"Where Beats and Culture Collide"</p>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to HipHop Chronicles</h2>
+    <p>Explore the heart of hip-hop culture featuring artist stories, upcoming events, exclusive interviews.</p>
+    <img src="images/HH logo.jpg" alt="Hip-Hop artists" class="featured" />
+
+    <section class="trending" aria-label="Trending hip-hop news">
+      <h3>Trending Now</h3>
+      <ul>
+        <li>
+          <strong>New Album Drop: Kendrick Lamar – "GNX"</strong>
+          <p class="description">
+            Experience powerful storytelling with sharp beats and raw culture from one of hip-hop’s greatest minds.
+          </p>
+          <div class="spotify-link">
+            <a href="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg" target="_blank" rel="noopener noreferrer">
+              <img src="images/spotify logo.png" alt="Listen on Spotify" />
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <strong>Upcoming Festival: HipHop Culture Fest 2025 Announced!</strong>
+          <p class="description">
+            Get ready for 3 days of pure fire — top-tier acts, underground legends, and electrifying performances.
+            This year, HipHop Fest 2025 is bigger than ever, featuring international headliners, workshops, and street art showcases.
+          </p>
+          <p class="description">
+            Early bird tickets are selling fast! Don’t miss the chance to experience the culture live with food trucks, fan zones, and after-parties hosted by the biggest names in hip-hop.
+          </p>
+          <a href="events.html">Learn more & get tickets</a>
+        </li>
+
+        <li>
+          <strong>Exclusive Interview: MC Fly Talks Bars, Life, and Hustle</strong>
+          <p class="description">
+            The OG speaks! Read our exclusive with MC Fly as he shares his journey, hustle tips, and what's coming next.
+          </p>
+          <p class="description">
+            From battling in local underground scenes to topping the charts, MC Fly opens up about the struggles and triumphs that shaped his career.
+            He dives into his creative process, influences, and how he stays true to the roots of hip-hop while evolving his sound.
+            “It’s all about authenticity and respect,” Fly tells us. “You gotta keep grinding, stay humble, and always represent your story.”
+          </p>
+          <p class="description">
+            Plus, get a sneak peek at his upcoming album and exclusive details on his plans for a community outreach program aimed at empowering youth through music.
+          </p>
+          <a href="artists.html#mcblaze">Read full interview</a>
+        </li>
+
+        <li>
+          <strong>Top 10 Albums Curated by HipHop Chronicles</strong>
+          <div class="album-image">
+            <img src="images/hiphop albums.jpg" alt="Top 10 Hip-Hop Albums" />
+            <p>Featuring classics by Lauryn Hill, Jay-Z, DMX, 2Pac, Nas, and more.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about" aria-label="About Us">
+      <h2>About Us</h2>
+      <p>
+        HipHop Chronicles is a digital hub dedicated to celebrating the vibrant world of hip-hop. 
+        From emerging underground talent to legendary icons, we cover it all with passion, integrity, and flair.
+      </p>
+      <p>
+        Our mission is to amplify the voices of hip-hop culture by delivering exclusive artist features, 
+        event updates, music reviews, and community-driven content that keeps the culture alive and thriving.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HipHop Chronicles. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+

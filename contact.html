@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HipHop Chronicles | Contacts</title>
+  <style>
+    body {
+      margin: 0; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      width: 120px;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #f0c420;
+    }
+    .motto {
+      font-style: italic;
+      color: #ccc;
+      margin-top: 0.2rem;
+      font-size: 1rem;
+      flex-basis: 100%;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: 100%;
+    }
+    nav a {
+      color: #f0c420;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus,
+    nav a[aria-current="page"] {
+      background-color: #f0c420;
+      color: #121212;
+      outline: none;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    main h2 {
+      color: #f0c420;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    section.contact-info {
+      background-color: #222;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(240, 196, 32, 0.3);
+      color: #ddd;
+      font-size: 1rem;
+      line-height: 1.4;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section.contact-info p {
+      margin: 0.5rem 0;
+    }
+    section.contact-info a {
+      color: #f0c420;
+      text-decoration: none;
+    }
+    section.contact-info a:hover,
+    section.contact-info a:focus {
+      text-decoration: underline;
+      outline: none; 
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #1f1f1f;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="HipHop Chronicles Logo" class="logo" />
+    <h1>HipHop Chronicles</h1>
+    <p class="motto">"Where Beats and Culture Collide"</p>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <section class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:contact@hiphopchronicles.com">contact@hiphopchronicles.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+267 71560843">+26771560843</a></p>
+      <p><strong>Address:</strong> HipHop Lane, Gaborone, Botswana</p>
+      <p>Follow us on social media for the latest updates!</p>
+      <p>
+        <a href="https://facebook.com/hiphopchronicles" target="_blank" aria-label="HipHop Chronicles Facebook page">Facebook</a> |
+        <a href="https://twitter.com/hiphopchronicles" target="_blank" aria-label="HipHop Chronicles Twitter page">Twitter</a> |
+        <a href="https://instagram.com/hiphopchronicles" target="_blank" aria-label="HipHop Chronicles Instagram page">Instagram</a>
+
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HipHop Chronicles. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

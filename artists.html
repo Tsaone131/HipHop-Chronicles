@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HipHop Chronicles | Artists</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+     header {
+      background-color: #1f1f1f;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      width: 120px;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #f0c420;
+    }
+    .motto {
+      font-style: italic;
+      color: #ccc;
+      margin-top: 0.2rem;
+      font-size: 1rem;
+      flex-basis: 100%;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: 100%;
+    }
+    nav a {
+      color: #f0c420;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus,
+    nav a[aria-current="page"] {
+      background-color: #f0c420;
+      color: #121212;
+      outline: none;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    main h2 {
+      color: #f0c420;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    ul.artists-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+    }
+    ul.artists-list li {
+      background-color: #222;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(240, 196, 32, 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ddd;
+      padding: 1rem;
+      text-align: center;
+    }
+    ul.artists-list img {
+      max-width: 100%;
+      border-radius: 12px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    ul.artists-list h3 {
+      margin: 0 0 0.5rem 0;
+      color: #f0c420;
+    }
+    ul.artists-list p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    /* New Interview Section */
+    .interview-section {
+      background-color: #222;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(240, 196, 32, 0.4);
+      margin-top: 3rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #eee;
+    }
+    .interview-section h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #f0c420;
+    }
+    .interview-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+      color: #ddd;
+    }
+    .interview-section a {
+      background-color: #f0c420;
+      color: #121212;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .interview-section a:hover,
+    .interview-section a:focus {
+      background-color: #d1a316;
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #1f1f1f;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="HipHop Chronicles Logo" class="logo" />
+    <h1>HipHop Chronicles</h1>
+    <p class="motto">"Where Beats and Culture Collide"</p>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html" aria-current="page">Artists</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Featured Artists</h2>
+    <ul class="artists-list">
+      <li>
+        <img src="images/Mc Fly.jpg" alt="MC Fly portrait" />
+        <h3>MC Fly</h3>
+        <p>Dynamic lyricist known for blending classic beats with modern flows.</p>
+      </li>
+      <li>
+        <img src="images/Dj Rhythm.jpg" alt="DJ Rhythm portrait" />
+        <h3>DJ Rhythm</h3>
+        <p>Master of the decks, creating unforgettable party vibes.</p>
+      </li>
+      <li>
+        <img src="images/lyric lady.jpg" alt="Lyric Lady portrait" />
+        <h3>Lyric Lady</h3>
+        <p>Empowering voices in hip-hop with conscious storytelling.</p>
+      </li>
+      <li>
+        <img src="images/Beat Master.jpg" alt="BeatMaster picture" />
+        <h3>BeatMaster</h3>
+        <p>Underground producer revolutionizing rhythms and basslines.</p>
+      </li>
+      <li>
+        <img src="images/queen flow.jpg" alt="Queen Flow picture" />
+        <h3>Queen Flow</h3>
+        <p>Blazing the mic with bars of fire and female empowerment.</p> 
+      </li>
+      <li>
+        <img src="images/graffiti poet.jpg" alt="Graffiti Poet portrait" />
+        <h3>Graffiti Poet</h3>
+        <p>Visual and verbal artist blending street art with lyrical genius.</p>
+      </li>
+    </ul>
+
+    <section class="interview-section" aria-labelledby="interview-title">
+      <h2 id="interview-title">Exclusive Interview: MC Fly</h2>
+      <p>In our latest homepage feature, MC Fly opens up about his journey, inspirations, and what the future holds for hip-hop culture. Dive into his story of blending classic beats with a modern twist, and learn about his upcoming projects and collaborations.</p>
+      <p><strong>Q:</strong> Let’s start at the beginning—what was your come-up like?</p>
+     <p><strong>MC Fly:</strong> Man, it started in the local scene, battling on street corners and open mics. That raw energy shaped my hunger. I had to fight for every verse to be heard.</p>
+     <p><strong>Q:</strong> Your sound blends old school with futuristic beats. What's your creative process?</p>
+     <p><strong>MC Fly:</strong> I always say—it’s all about authenticity and respect. I stay rooted in real hip-hop while experimenting with new flows and tech. Music has to reflect your truth.</p>
+     <p><strong>Q:</strong> What influenced your latest track “Golden Flow”?</p>
+     <p><strong>MC Fly:</strong> “Golden Flow” is about knowing your worth, even when others doubt you. It’s my anthem for the underdogs—those grinding in silence but destined to shine.</p>
+     <p><strong>Q:</strong> You’ve talked about giving back. What’s in the works?</p>
+     <p><strong>MC Fly:</strong> I'm launching a community outreach program to empower youth through music—workshops, mentorship, and studio time. It's bigger than me now. It’s about legacy.</p>
+     <p><strong>Q:</strong> And finally, what can fans expect next?</p>
+     <p><strong>MC Fly:</strong> A visual album is on the way—full of bars, beats, and bold stories. I’m excited to bring fans into my world, visually and sonically. This next chapter is all heart and hustle.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HipHop Chronicles. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
